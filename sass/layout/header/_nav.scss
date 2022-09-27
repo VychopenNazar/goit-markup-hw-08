@@ -1,0 +1,39 @@
+.nav {
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--title-clr);
+    padding-bottom: 32px;
+    transition: color var(--transition-main);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--main-clr);
+  }
+
+  .now {
+    position: relative;
+    color: var(--main-clr);
+  }
+
+  &__link.now::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-clr);
+    border-radius: 4px;
+  }
+}

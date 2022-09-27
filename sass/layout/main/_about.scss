@@ -1,0 +1,31 @@
+.about {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: var(--btn-bg-clr);
+    height: 120px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-clr);
+    margin-bottom: 10px;
+    flex-basis: calc((100% - 30px) / 4);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
+}

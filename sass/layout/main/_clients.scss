@@ -1,0 +1,36 @@
+.clients {
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-clr);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc((100% - 30px) / 6);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: solid 1px var(--social-link-clr);
+    border-radius: var(--border-radius);
+    fill: var(--social-link-clr);
+    transition: border-color var(--transition-main), fill var(--transition-main);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    fill: var(--main-clr);
+    border-color: var(--main-clr);
+  }
+}

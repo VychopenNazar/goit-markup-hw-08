@@ -1,0 +1,21 @@
+.header {
+    background-color: var(--main-bg-clr);
+    border-bottom: 1px solid #ececec;
+    padding: 24px 0;
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-family: var(--logo-font);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31 / 26);
+        letter-spacing: 0.03em;
+        color: var(--second-txt-color);
+        margin-right: 93px;
+    }
+}

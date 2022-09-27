@@ -1,0 +1,28 @@
+:root {
+    /* Кольори тексту */
+
+    --main-clr: #2196f3;
+    --title-clr: #212121;
+    --txt-clr: #757575;
+    --second-txt-color: #000000;
+    --social-link-clr: #afb1b8;
+
+    /* Кольори фону */
+
+    --main-bg-clr: #ffffff;
+    --second-bg-clr: #2f303a;
+    --btn-bg-clr: #f5f4fa;
+
+    /* Шрифти */
+
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway';
+
+    /* Заокруглення */
+
+    --border-radius: 4px;
+
+    /* CSS переходи */
+
+    --transition-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

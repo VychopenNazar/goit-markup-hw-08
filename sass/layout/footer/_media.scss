@@ -1,0 +1,41 @@
+.media {
+  &__list {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--main-bg-clr);
+  }
+
+  &__mail {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-main);
+  }
+
+  &__mail:hover,
+  &__mail:focus {
+    color: var(--main-clr);
+  }
+
+  &__tel {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-main);
+  }
+
+  &__tel:hover,
+  &__tel:focus {
+    color: var(--main-clr);
+  }
+}

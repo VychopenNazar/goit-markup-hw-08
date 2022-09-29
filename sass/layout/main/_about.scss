@@ -1,7 +1,20 @@
 .about {
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-basis: calc((100% - 30px) / 4);
+    }
   }
 
   &__wrap {
@@ -29,3 +42,9 @@
     letter-spacing: 0.03em;
   }
 }
+
+// .about {
+//   &__list {
+//     display: flex;
+//     gap: 30px;
+//   }

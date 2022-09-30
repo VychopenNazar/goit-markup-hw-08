@@ -6,15 +6,17 @@
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      flex-wrap: wrap;
-      flex-basis: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      flex-basis: calc((100% - 30px) / 4);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      // flex-basis: calc((100% - 30px) / 2);
     }
+
+    // @media screen and (min-width: 1200px) {
+    //   flex-basis: calc((100% - 30px) / 4);
+    // }
   }
 
   &__wrap {
@@ -33,7 +35,7 @@
     text-transform: uppercase;
     color: var(--title-clr);
     margin-bottom: 10px;
-    flex-basis: calc((100% - 30px) / 4);
+    // flex-basis: calc((100% - 30px) / 4);
   }
 
   &__text {
@@ -42,9 +44,3 @@
     letter-spacing: 0.03em;
   }
 }
-
-// .about {
-//   &__list {
-//     display: flex;
-//     gap: 30px;
-//   }

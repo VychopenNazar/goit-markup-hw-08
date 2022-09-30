@@ -1,7 +1,10 @@
 .clients {
-  @media screen and (max-width: 1199px) {
-    padding: 60px 0;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   &__wrap {
+  //     padding-left: 15px;
+  //     padding-right: 15px;
+  //   }
+  // }
 
   &__title {
     font-weight: 700;
@@ -21,12 +24,17 @@
       margin-bottom: 50px;
     }
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (max-width: 399px) {
+      justify-content: center;
+    }
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 3);

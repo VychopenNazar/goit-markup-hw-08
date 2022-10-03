@@ -1,10 +1,18 @@
 .filter {
   &-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     flex-basis: calc((100% - 8px) / 5);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__btn {
@@ -13,7 +21,7 @@
     color: var(--title-clr);
     cursor: pointer;
     border: 0;
-    padding: 6px 22px;
+    padding: 6px 25px;
     font-weight: 500;
     font-family: inherit;
     height: 38px;

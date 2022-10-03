@@ -4,17 +4,37 @@
 
   &__wrap {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: unset;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__logo {
     display: block;
     font-family: var(--logo-font);
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--main-bg-clr);
     margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+      text-align: left;
+    }
   }
 }

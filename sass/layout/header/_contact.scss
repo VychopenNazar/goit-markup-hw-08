@@ -1,53 +1,77 @@
 .contact {
-  display: flex;
-  gap: 50px;
-  flex-basis: calc((100% - 50px) / 3);
+  display: none;
 
-  &__mail {
+  @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--txt-clr);
-    transition: color var(--transition-main);
-  }
+    flex-basis: calc((100% - 50px) / 3);
 
-  &__logo {
-    fill: var(--txt-clr);
-  }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      gap: 30px;
+    }
 
-  &__tel {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--txt-clr);
-    transition: color var(--transition-main);
-  }
+    &__mail {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      color: var(--txt-clr);
+      transition: color var(--transition-main);
 
-  &__mail:hover,
-  &__mail:focus {
-    color: var(--main-clr);
-  }
+      @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+      }
+    }
 
-  &__mail:hover &__logo,
-  &__mail:focus &__logo {
-    fill: currentColor;
-  }
+    &__logo {
+      fill: var(--txt-clr);
+    }
 
-  &__tel:hover,
-  &__tel:focus {
-    color: var(--main-clr);
-  }
+    &__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      color: var(--txt-clr);
+      transition: color var(--transition-main);
 
-  &__tel:hover &__logo,
-  &__tel:focus &__logo {
-    fill: currentColor;
+      @media screen and (min-width: 1200px) {
+        gap: 10px;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &__mail:hover,
+      &__mail:focus {
+        color: var(--main-clr);
+      }
+
+      &__mail:hover &__logo,
+      &__mail:focus &__logo {
+        fill: currentColor;
+      }
+
+      &__tel:hover,
+      &__tel:focus {
+        color: var(--main-clr);
+      }
+
+      &__tel:hover &__logo,
+      &__tel:focus &__logo {
+        fill: currentColor;
+      }
+    }
   }
 }

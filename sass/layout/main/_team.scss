@@ -26,7 +26,8 @@
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
+      // width: calc((100% - 45px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
@@ -41,6 +42,10 @@
     border-radius: var(--border-radius);
     width: 270px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 45px) / 2);
+    }
   }
 
   &__name {

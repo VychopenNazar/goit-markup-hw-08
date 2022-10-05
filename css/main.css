@@ -583,9 +583,6 @@ button {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -605,6 +602,11 @@ button {
   border-radius: var(--border-radius);
   width: 270px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 45px) / 2);
+  }
 }
 .team__name {
   font-weight: 500;

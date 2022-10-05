@@ -65,15 +65,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 63px 24px;
+    padding: 77px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform var(--transition-main);
-  }
 
-  .overlay__desc {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: var(--main-bg-clr);
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px 77px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
+
+    &__desc {
+      font-size: 18px;
+      line-height: calc(28 / 18);
+      letter-spacing: 0.03em;
+      color: var(--main-bg-clr);
+    }
   }
 }

@@ -5,73 +5,73 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
     flex-basis: calc((100% - 50px) / 3);
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+    color: var(--txt-clr);
+    transition: color var(--transition-main);
 
     @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      gap: 30px;
+      gap: 10px;
+      font-size: 14px;
+      line-height: calc(16 / 14);
     }
+  }
 
-    &__mail {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: calc(14 / 12);
-      letter-spacing: 0.02em;
-      color: var(--txt-clr);
-      transition: color var(--transition-main);
+  &__logo {
+    fill: var(--txt-clr);
+  }
 
-      @media screen and (min-width: 1200px) {
-        gap: 10px;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-      }
-    }
-
-    &__logo {
-      fill: var(--txt-clr);
-    }
-
-    &__tel {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: calc(14 / 12);
-      letter-spacing: 0.02em;
-      color: var(--txt-clr);
-      transition: color var(--transition-main);
-
-      @media screen and (min-width: 1200px) {
-        gap: 10px;
-        font-size: 14px;
-        line-height: calc(16 / 14);
-      }
-    }
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+    color: var(--txt-clr);
+    transition: color var(--transition-main);
 
     @media screen and (min-width: 1200px) {
-      &__mail:hover,
-      &__mail:focus {
-        color: var(--main-clr);
-      }
+      gap: 10px;
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
+  }
 
-      &__mail:hover &__logo,
-      &__mail:focus &__logo {
-        fill: currentColor;
-      }
+  @media screen and (min-width: 1200px) {
+    &__mail:hover,
+    &__mail:focus {
+      color: var(--main-clr);
+    }
 
-      &__tel:hover,
-      &__tel:focus {
-        color: var(--main-clr);
-      }
+    &__mail:hover &__logo,
+    &__mail:focus &__logo {
+      fill: currentColor;
+    }
 
-      &__tel:hover &__logo,
-      &__tel:focus &__logo {
-        fill: currentColor;
-      }
+    &__tel:hover,
+    &__tel:focus {
+      color: var(--main-clr);
+    }
+
+    &__tel:hover &__logo,
+    &__tel:focus &__logo {
+      fill: currentColor;
     }
   }
 }

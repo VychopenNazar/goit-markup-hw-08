@@ -28,10 +28,23 @@
     }
   }
 
+  &__item {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     border: solid 1px var(--social-link-clr);
     border-radius: var(--border-radius);
     fill: var(--social-link-clr);
@@ -42,9 +55,5 @@
   &__link:focus {
     fill: var(--main-clr);
     border-color: var(--main-clr);
-  }
-
-  &__logo {
-    margin: 16px 32px;
   }
 }
